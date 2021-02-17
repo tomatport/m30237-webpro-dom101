@@ -1,11 +1,38 @@
 # The Document Object Model (DOM)
 
-* Use `git` or _GitHub Desktop_ to clone this `dom101` repository (or if that's not possible download a zip - you should prefer and aim to clone repositiries from now on), for example if you have `git` installed you can clone using:
-```bash
-git clone https://github.com/portsoc/dom101.git
-```
-* From your new local `dom101` folder, open `index.html` in a browser to see the unit tests (which will all fail at first).
-* Edit `index.js`; improving and adding code until all the tests pass.
+## Contents
+Herein are:
+  * examples of writing to, reading from and manipulating the DOM.
+  * Unit tests for practicing use the DOM API.
+
+
+## Download
+
+You can get a copy of this code repository in several ways:
+
+1. use `git` to clone it:
+   ```shell
+   git clone https://github.com/portsoc/dom101.git
+   ```
+   or
+2. use the GitHub CLI tool:
+   ```shell
+   gh repo clone portsoc/dom101
+   ```
+3. download a [zip](https://github.com/portsoc/dom101/archive/master.zip) of this repository
+   * This has the _disadvantage_ that if we publish improvements or bug fixes it will be harder for you to get hold of them (conversely using `git` you just have to type `git pull` at the command line to receive the updates).
+
+If you're not familiar with the `git` & `gh` tools, or you have not yet installed them on your machine, we strongly suggest that you do install them and start the very worthwhile discovery process.
+
+
+## Running
+
+From your new local copy of the code:
+* open `index.html` in your browser to see the listing of tests and their pass/fail status,
+* edit `index.js` to add code until all the tests pass,
+* try to improve the code to be cleaner, while checking that the tests continue to pass,
+* and you may also examine (but do not change) `test.js` to understand exactly what is being tested.
+
 
 # Examples
 Examples of DOM access and manipulation
