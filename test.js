@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 QUnit.config.reorder = false;
 const { test } = QUnit;
