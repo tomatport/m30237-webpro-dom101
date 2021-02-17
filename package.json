@@ -1,24 +1,36 @@
 {
-  "name": "ws_dom",
-  "version": "1.0.0",
-  "description": "WebScript JavaScript DOM Tests",
+  "name": "dom101",
+  "version": "1.1.0",
+  "description": "DOM (Document Object Model) manipulation unit tests",
   "main": "index.html",
-  "author": "Rich Boakes <rjb@port.ac.uk> (http://rjb.soc.port.ac.uk/)",
+  "author": "SoftEng <softeng@port.ac.uk>",
   "contributors": [
     "Rich Boakes <rjb@port.ac.uk>",
     "Jacek Kopecky <jacek@port.ac.uk>",
     "Matt Dennis <matt.dennis@port.ac.uk>"
   ],
   "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/portsoc/dom101/issues"
+  },
+  "homepage": "https://github.com/portsoc/dom101#readme",
   "eslintConfig": {
     "extends": "portsoc",
     "root": true,
+    "env": {
+      "browser": true
+    },
     "globals": {
-      "QUnit": "writable"
+      "QUnit": "readonly",
+      "showMessage": "writable",
+      "showList": "writable",
+      "startShowingMessage": "writable",
+      "handleError": "writable",
+      "drawBox": "writable"
     }
   },
   "devDependencies": {
-    "eslint": "^7.13.0",
-    "eslint-config-portsoc": "^0.6.0"
+    "eslint": "^7.18.0",
+    "eslint-config-portsoc": "^0.8.1"
   }
 }
