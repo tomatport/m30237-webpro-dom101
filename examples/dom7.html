@@ -1,17 +1,18 @@
 <!doctype html>
 <title>insert before</title>
 
-<ul id=x>
-  <li>one
-  <li>two
-  <li id=four>four
+<ul id=myList>
+  <li>First line
+  <li>Second line
+  <li id=lastItem>Last Line
 <ul>
 
 <script>
   const li = document.createElement("li");
-  const x = document.querySelector("#x");
-  const four = document.querySelector("#four");
+  li.textContent = "This line was added.";
 
-  li.textContent = "three";
-  x.insertBefore(li, four);
+  const myList = document.querySelector("#myList");
+  const lastItem = document.querySelector("#lastItem");
+
+  myList.insertBefore(li, lastItem);
 </script>
