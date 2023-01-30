@@ -2,12 +2,13 @@
 <title>remove element</title>
 
 <ul id=x>
-  <li>one
-  <li>two
-  <li id=four>four
+  <li>First line
+  <li>Second line
+  <li id="removeThis">Removed line
+  <li>Last Line
 <ul>
 
 <script>
-  const four = document.querySelector("#four");
-  four.remove();
+  const elem = document.querySelector("#removeThis");
+  elem.remove();
 </script>
