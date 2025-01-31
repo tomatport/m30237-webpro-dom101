@@ -53,3 +53,55 @@ function newElement(name) {
 function findElementById(id) {
   return document.getElementById(id);
 }
+
+function findElementsByQuery(query) {
+  return document.querySelectorAll(query);
+}
+
+function reverseList(query) {
+  const elem = document.querySelector(query);
+  const listItems = Array.from(elem.children).reverse();
+
+  // listItems.forEach(li => {
+  //   elem.appendChild(li);
+  // });
+
+  for (const li of listItems) {
+    elem.appendChild(li);
+  }
+
+  return elem;
+}
+
+function mover(moveThis, appendToThis) {
+  const toMove = document.querySelector(moveThis);
+  const moveTo = document.querySelector(appendToThis);
+  moveTo.appendChild(toMove);
+}
+
+function filler(list, candidates) {
+  for (const c of candidates) {
+    const newElem = document.createElement('li');
+    newElem.innerText = c;
+    list.appendChild(newElem);
+  }
+}
+
+function dupe(selector) {
+  const elem = document.querySelector(selector);
+  elem.parentElement.appendChild(elem.cloneNode(true));
+}
+
+function removeAll(selector) {
+  for (const elem of document.querySelectorAll(selector)) {
+    elem.remove();
+  }
+}
+
+function getUserData() {
+  const name = document.querySelector('input#username').value;
+  const speed = parseInt(document.querySelector('input#speed').value);
+  const student = document.querySelector('input#student').checked;
+
+  return { name, speed, student };
+}
