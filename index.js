@@ -60,14 +60,10 @@ function findElementsByQuery(query) {
 
 function reverseList(query) {
   const elem = document.querySelector(query);
-  const listItems = Array.from(elem.children).reverse();
-
-  // listItems.forEach(li => {
-  //   elem.appendChild(li);
-  // });
+  const listItems = elem.children;
 
   for (const li of listItems) {
-    elem.appendChild(li);
+    elem.prepend(li);
   }
 
   return elem;
