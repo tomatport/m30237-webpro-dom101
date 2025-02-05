@@ -70,7 +70,7 @@ function findElementsByQuery(query) {
 
 // 11. Reverse a <ul> or <ol> list
 function reverseList(query) {
-  const listElem = document.querySelector(query).children;
+  const listElem = document.querySelector(query);
 
   for (const li of listElem.children) {
     listElem.prepend(li);
@@ -111,7 +111,7 @@ function removeAll(selector) {
 // 16. Return an object from three input fields
 function getUserData() {
   const name = document.querySelector('input#username').value;
-  const speed = parseInt(document.querySelector('input#speed').value);
+  const speed = document.querySelector('input#speed').valueAsNumber;
   // this checkbox is sticky, sometimes the browser caches the state so the test fails. ctrl+f5 fixes.
   const student = document.querySelector('input#student').checked;
 
